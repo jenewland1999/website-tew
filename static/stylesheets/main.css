@@ -1,0 +1,135 @@
+:root {
+  /* Root Font Size */
+  font-size: 16px;
+
+  /* CSS Variables */
+  --tew-color-black: #000000;
+  --tew-color-white: #ffffff;
+  --tew-color-grey: #999999;
+  --tew-color-light-grey: #d1d2d4;
+  --tew-color-bg: #001522;
+  --tew-color-accent: #892890;
+  --tew-color-accent-light: #bb59c1;
+}
+
+.tew-body {
+  align-items: center;
+  background-color: var(--tew-color-bg);
+  color: var(--tew-color-white);
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: "Neris";
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+}
+
+.tew-link {
+  border-radius: 0.25em; /* 4px */
+  color: var(--tew-color-accent-light);
+  display: inline-block;
+  font-weight: 700;
+  padding: 0 0.25em; /* 4px */
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.tew-link:active,
+.tew-link:focus,
+.tew-link:hover {
+  background-color: var(--tew-color-accent);
+  color: var(--tew-color-white);
+  outline: none;
+  text-decoration: none;
+}
+
+.tew-splash {
+  margin: 0 1em; /* 16px */
+  max-width: 40em; /* 640px */
+}
+
+.tew-splash__header {
+  margin-bottom: 2.5em; /* 40px */
+}
+
+.tew-splash__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo__image {
+  height: auto;
+  max-width: 6.24em; /* 100px */
+}
+
+.tew-splash__title {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin: 0 auto 0.25em;
+  max-width: 8.1875em; /* 262px */
+}
+
+.title--large,
+.title--small {
+  display: block;
+}
+
+.title--large {
+  font-size: 2.75rem; /* 44px */
+  letter-spacing: 0.05em; /* 2.2px */
+  margin-right: 0.181818182em; /* 8px */
+  text-transform: uppercase;
+}
+
+.title--small {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.tew-splash__summary {
+  color: var(--tew-color-light-grey);
+  letter-spacing: -0.05em; /* -1.2px */
+  text-align: center;
+}
+
+.tew-notice {
+  letter-spacing: 0.05em; /* 0.92px */
+  text-align: center;
+}
+
+.tew-footer {
+  position: absolute;
+  bottom: 1em; /* 16px */
+}
+
+.tew-copyright {
+  color: var(--tew-color-grey);
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Tablet (width >= 768px) */
+@media screen and (min-width: 48em) {
+  .logo__image {
+    max-width: 12.5em; /* 200px */
+  }
+
+  .title--large {
+    font-size: 4.75rem; /* 76px */
+    margin-right: 0.210526316em; /* 16px */
+  }
+
+  .title--small {
+    font-size: 2.25rem; /* 36px */
+  }
+
+  .tew-splash__summary {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .tew-notice {
+    font-size: 1.15rem; /* 18.4px */
+  }
+}
