@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="en" prefix="og: https://ogp.me/ns#" class="tew">
   <head>
     <!-- Required Meta Tags -->
     <meta charset="utf-8" />
@@ -7,8 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
     />
-
-    <title>Total Engineering & Welding</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <!-- Stylesheets -->
     <!-- Google Material Icons -->
@@ -17,13 +16,20 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-    <!-- TEW Styles -->
-    <link rel="stylesheet" href="/static/stylesheets/bundle.css" />
+    <!-- Bootstrap v4.5 Reboot -->
+    <link
+      rel="stylesheet"
+      href="/static/stylesheets/bootstrap-reboot.min.css"
+    />
+
+    <!-- Our Styles -->
+    <link rel="stylesheet" href="/static/stylesheets/main.css" />
 
     <!-- Scripts -->
-    <script defer src="/static/scripts/bundle.js"></script>
+    <!-- <script defer src="/static/scripts/main.js"></script> -->
 
     <!-- SEO - Primary -->
+    <title>Total Engineering & Welding</title>
     <meta name="title" content="Total Engineering & Welding" />
     <meta
       name="description"
@@ -91,415 +97,152 @@
     <meta name="msapplication-config" content="/browserconfig.xml" />
     <meta name="theme-color" content="#892890" />
   </head>
-  <body>
-    <div id="app">
-      <header class="site-header">
-        <div class="container">
-          <p class="info info-email">
-            <i class="material-icons">&#xE0BE;</i>
-            <a href="mailto:contact@totalengineeringandwelding.uk"
-              >contact@totalengineeringandwelding.uk</a
+  <body class="tew-body">
+    <header class="tew-header">
+      <section class="tew-info-bar">
+        <ul class="tew-info-bar__list">
+          <li class="tew-info-bar__item">
+            <a href="tel:+447738643707" class="tew-info-bar__link">
+              <span class="tew-info-bar__icon material-icons">
+                phone
+              </span>
+              <span class="tew-info-bar__text">
+                07738643707
+              </span>
+            </a>
+          </li>
+          <li class="tew-info-bar__item">
+            <a
+              href="mailto:contact@totalengineeringandwelding.uk"
+              class="tew-info-bar__link"
             >
+              <span class="tew-info-bar__icon material-icons">
+                mail
+              </span>
+              <span class="tew-info-bar__text">
+                contact@totalengineeringandwelding.uk
+              </span>
+            </a>
+          </li>
+          <li class="tew-info-bar__item">
+            <span class="tew-info-bar__link tew-info-bar__link--nohover">
+              <span class="tew-info-bar__icon material-icons">
+                schedule
+              </span>
+              <span class="tew-info-bar__text">
+                Available 24/7 365 days a year.
+              </span>
+            </span>
+          </li>
+        </ul>
+      </section>
+      <section class="tew-header__content">
+        <a href="/" class="tew-header__brand">
+          <!-- TEW Logo -->
+          <img
+            src="/static/images/tew-brand.svg"
+            alt="Total Engineering & Welding's logo"
+          />
+        </a>
+
+        <button class="tew-header__btn tew-header__btn--nav">
+          <span class="tew-header__btn-icon material-icons">menu</span>
+        </button>
+
+        <nav class="tew-nav">
+          <ul class="tew-nav__list">
+            <li class="tew-nav__item">
+              <a href="#" class="tew-nav__link">About Us</a>
+            </li>
+            <li class="tew-nav__item">
+              <a href="#" class="tew-nav__link">Contact Us</a>
+            </li>
+            <li class="tew-nav__item">
+              <a href="#" class="tew-nav__link">Services</a>
+            </li>
+            <li class="tew-nav__item">
+              <a href="#" class="tew-nav__link">Showcase</a>
+            </li>
+            <li class="tew-nav__item">
+              <a href="#" class="tew-nav__link">Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="tew-main">
+      <section class="tew-section tew-section--hero" id="hero">
+        <div class="tew-container">
+          <h2 class="tew-section__heading tew-section__heading--lg">
+            Experienced Professional Welding.
+          </h2>
+          <p class="tew-section__excerpt">
+            TEW provide a range of fabrication and welding services across Great
+            Britain at great prices and with 24/7 availability. Contact us today
+            for a quote.
           </p>
-          <p class="info info-phone">
-            <i class="material-icons">&#xE0CD;</i>
-            <a href="tel:+447738643707">+44 (0) 7738 643 707</a>
-          </p>
-          <p class="info info-availability">
-            <i class="material-icons">&#xE192;</i>
-            <a href="#" class="dummy-link">Available 365 days a year 24/7</a>
-          </p>
+          <a href="#contact-us" class="tew-btn tew-btn--primary tew-btn--lg"
+            >Request Quote</a
+          >
         </div>
-      </header>
-      <div class="navigation">
-        <div class="container cf">
-          <a class="logo" href="/">
-            <h1>TEW</h1>
-          </a>
-          <div class="action-group">
-            <button class="btn btn-nav btn-link" id="search-toggle">
-              <i class="material-icons">&#xE8B6;</i>
-            </button>
-            <button class="btn btn-nav btn-link" id="nav-toggle">
-              <i class="material-icons">&#xE5D2;</i>
-            </button>
-          </div>
-          <div class="site-search" id="tew-search">
-            <div class="search-form">
-              <form class="search-field">
-                <input type="search" id="tew-search-box" autocomplete="off" />
-                <button class="btn btn-absolute btn-clear">
-                  <i class="material-icons">&#xE14C;</i>
-                </button>
-              </form>
-              <button type="submit" class="btn btn-search">Search</button>
-            </div>
-          </div>
-          <nav class="site-nav">
-            <ul>
-              <li><a href="#about">About us</a></li>
-              <li><a href="#contact">Contact us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#work-showcase">Showcase</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="hero">
-        <div class="container">
-          <div class="flex flex-center">
-            <h2 class="headline">
-              Professional and affordable fabrication and welding.
-            </h2>
-            <p class="summary">
-              We provide a high quality range of services to all our customers
-              with our unbeatable 24/7 call-out service.
-            </p>
-            <div class="btn-group">
-              <a href="#" class="btn btn-primary">Request a quote</a>
-              <a href="#" class="btn btn-secondary btn-outline">Learn more</a>
-            </div>
-            <div class="action-hint">
-              <i class="material-icons pulsate-fwd">&#xE323;</i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <main class="site-content">
-        <section class="section" id="cta-cards">
-          <div class="container">
-            <div class="card card-secondary">
-              <h3 class="card-heading">Experience quality</h3>
-              <p class="card-text">
-                Quality is extremely important to our clients; it's important to
-                us too. We guarantee to deliver the highest quality welding and
-                hard facing across Wales and South England.
+      </section>
+
+      <section
+        class="tew-section tew-section--inverse tew-section--p1"
+        id="usp"
+      >
+        <div class="tew-container">
+          <ul class="tew-usps">
+            <li class="tew-usp">
+              <h3 class="tew-usp__heading">Superior Quality</h3>
+              <p class="tew-usp__summary">
+                TEW believes in only the most Superior quality. So from top to
+                bottom, start to finish we'll go that extra mile to exceed your
+                expectations to deliver just that.
               </p>
-              <a href="#" class="card-link"
-                >Observe our quality work
-                <i class="material-icons">&#xE5CC;</i></a
-              >
-              <span class="card-decor">#1</span>
-            </div>
-            <div class="card card-primary">
-              <h3 class="card-heading">Personalised touch</h3>
-              <p class="card-text">
-                When hiring us, we know that the work you require of us is
-                specific to you. We understand this and take it into
-                consideration making sure that the service we offer you is
-                unique to the job at hand.
+              <img src="/static/images/illustrations/usp-quality.svg" alt="" />
+            </li>
+            <li class="tew-usp">
+              <h3 class="tew-usp__heading">24/7 Availability</h3>
+              <p class="tew-usp__summary">
+                Need us during the night or perhaps during the holidays? Fear
+                not. TEW prides itself in our year-round 24/7 availability.
+                We're here for you when you need us most .
               </p>
-              <a href="#" class="card-link"
-                >Enquire about a job <i class="material-icons">&#xE5CC;</i></a
-              >
-              <span class="card-decor">#2</span>
-            </div>
-            <div class="card card-secondary">
-              <h3 class="card-heading">24 hour call out service available</h3>
-              <p class="card-text">
-                We believe in helping our clients as soon as we can. As such,
-                we're dedicated in providing an unbeatable 24 hour call out
-                service in which we'll guarantee to be with you within 24 hours
-                of calling.
-              </p>
-              <a href="#" class="card-link"
-                >Get in touch <i class="material-icons">&#xE5CC;</i></a
-              >
-              <span class="card-decor">#3</span>
-            </div>
-            <div class="card card-primary">
-              <h3 class="card-heading">Outstanding results</h3>
-              <p class="card-text">
-                Total Engineering and Welding aim to provide the highest of
-                quality in welding and hard-facing giving you outstanding
-                results, every time.
-              </p>
-              <a href="#" class="card-link"
-                >See what our previous clients say
-                <i class="material-icons">&#xE5CC;</i></a
-              >
-              <span class="card-decor">#4</span>
-            </div>
-          </div>
-        </section>
-        <section class="section" id="about">
-          <div class="container cf">
-            <h3>Who we are</h3>
-            <p>
-              We're a small start-up company based in Bristol, England who
-              specialize in welding and hard facing. With over 25 years of
-              experience in the industry, we sell only the best quality of
-              service to our clients.
-            </p>
-            <div class="gallery">
-              <div class="gallery-item"></div>
-              <div class="gallery-item active"></div>
-              <div class="gallery-item"></div>
-            </div>
-            <a href="#" class="btn btn-primary">Learn more</a>
-          </div>
-        </section>
-        <section class="section" id="services">
-          <div class="container">
-            <h3>Our services</h3>
-            <div class="services">
-              <div class="service-item">
-                <i class="material-icons">&#xE800;</i>
-                <h4 class="service-heading">Mobile plant welding repairs</h4>
-                <p class="service-text">
-                  We offer a great service in welding repairs which are
-                  available anywhere in Wales and South England via our mobile
-                  plant.
-                </p>
-              </div>
-              <div class="service-item">
-                <i class="material-icons">&#xE800;</i>
-                <h4 class="service-heading">Repairs and maintenance</h4>
-                <p class="service-text">
-                  Total Engineering and Welding provide a top of the line repair
-                  service as well as maintenance via our 24 hour call-out
-                  service.
-                </p>
-              </div>
-              <div class="service-item">
-                <i class="material-icons">&#xE800;</i>
-                <h4 class="service-heading">Wear protection materials</h4>
-                <p class="service-text">
-                  The materials utilized by ourselves are guaranteed to be
-                  durable and long lasting to give the best results.
-                </p>
-              </div>
-              <div class="service-item">
-                <i class="material-icons">&#xE800;</i>
-                <h4 class="service-heading">On-site welding</h4>
-                <p class="service-text">
-                  We believe that you shouldn't have to come to us. As such,
-                  we'll come to you with our on-site welding service. Saving you
-                  time and money.
-                </p>
-              </div>
-              <div class="service-item">
-                <i class="material-icons">&#xE800;</i>
-                <h4 class="service-heading">
-                  Fabrication, fitting and engineering
-                </h4>
-                <p class="service-text">
-                  We provide various options for you whether it be fabrication,
-                  fitting components or general engineering.
-                </p>
-              </div>
-              <div class="service-item">
-                <i class="material-icons">&#xE800;</i>
-                <h4 class="service-heading">Labour</h4>
-                <p class="service-text">
-                  Total Engineering and Welding's workmen aren't afraid to get
-                  their hands dirty. We work long hours to provide you with
-                  results.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section" id="cta-splash">
-          <div class="container">
-            <h3>We're certified, licensed and trained.</h3>
-            <a href="#" class="btn btn-primary">View accomplishments</a>
-          </div>
-        </section>
-        <section class="section" id="work-showcase">
-          <div class="container">
-            <h3>Work showcase</h3>
-            <div class="work-items">
-              <a href="#" class="work-item cf">
-                <div class="overlay"></div>
-                <div class="work-item-info">
-                  <h4 class="work-item-heading">Walkway Repairs</h4>
-                  <p class="work-item-summary">
-                    <span class="organization">New Earth Group</span>
-                    &nbsp;&#124;&nbsp;
-                    <span class="date">Jan 2017</span>
-                  </p>
-                </div>
-                <i class="material-icons">&#xE5C8;</i>
-              </a>
-              <a href="#" class="work-item cf">
-                <div class="overlay"></div>
-                <div class="work-item-info">
-                  <h4 class="work-item-heading">Walkway Repairs</h4>
-                  <p class="work-item-summary">
-                    <span class="organization">New Earth Group</span>
-                    &nbsp;&#124;&nbsp;
-                    <span class="date">Jan 2017</span>
-                  </p>
-                </div>
-                <i class="material-icons">&#xE5C8;</i>
-              </a>
-              <a href="#" class="work-item cf">
-                <div class="overlay"></div>
-                <div class="work-item-info">
-                  <h4 class="work-item-heading">Walkway Repairs</h4>
-                  <p class="work-item-summary">
-                    <span class="organization">New Earth Group</span>
-                    &nbsp;&#124;&nbsp;
-                    <span class="date">Jan 2017</span>
-                  </p>
-                </div>
-                <i class="material-icons">&#xE5C8;</i>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="section" id="testimonials">
-          <div class="container">
-            <h3>Previous clients</h3>
-            <div class="testimonials-wrapper">
-              <div class="testimonial-item">
-                <div
-                  class="testimonial-avatar"
-                  id="ta_01"
-                  style="
-                    background-image: url(https://via.placeholder.com/150x84);
-                  "
-                ></div>
-              </div>
-              <div class="testimonial-item">
-                <div
-                  class="testimonial-avatar"
-                  id="ta_02"
-                  style="
-                    background-image: url(https://via.placeholder.com/150x84);
-                  "
-                ></div>
-              </div>
-              <div class="testimonial-item">
-                <div
-                  class="testimonial-avatar"
-                  id="ta_03"
-                  style="
-                    background-image: url(https://via.placeholder.com/150x84);
-                  "
-                ></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section" id="contact">
-          <div class="container">
-            <h3>Get in touch</h3>
-            <p>
-              If you have queries or would like to request a quote, please don't
-              hesitate to contact us via post, phone or email. We're here
-              whenever you need us.
-            </p>
-            <ul>
-              <li>
-                <a href="https://www.google.co.uk/maps/place/Bristol/">
-                  <i class="material-icons">&#xE55F;</i>
-                  <p class="address">Bristol, United Kingdom</p>
-                </a>
-              </li>
-              <li>
-                <a href="tel:+447738643707">
-                  <i class="material-icons">&#xE0CD;</i>
-                  <p>+44 (0) 7738 643 707</p>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:contact@totalengineeringandwelding.uk">
-                  <i class="material-icons">&#xE0BE;</i>
-                  <p>contact@totalengineeringandwelding.uk</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="section" id="contact-form">
-          <div class="container">
-            <form
-              method="post"
-              action="https://formspree.io/contact@totalengineeringandwelding.uk"
-            >
-              <input type="text" name="name" placeholder="NAME" required />
-              <input type="text" name="_replyto" placeholder="EMAIL" required />
-              <input
-                type="text"
-                name="_subject"
-                placeholder="SUBJECT"
-                required
+              <img
+                src="/static/images/illustrations/usp-availability.svg"
+                alt=""
               />
-              <textarea
-                name="message"
-                placeholder="MESSAGE"
-                required
-              ></textarea>
-              <button class="btn btn-form" type="submit">SEND</button>
-            </form>
-          </div>
-        </section>
-      </main>
-      <!-- /main -->
-      <footer class="site-footer">
-        <div class="container">
-          <nav class="site-footer-nav">
-            <ul class="linkboxes-list">
-              <li class="linkbox linkbox-connect">
-                <h3 class="linkbox-heading">Connect</h3>
-                <ul class="linkbox-list">
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Google+</a></li>
-                  <li><a href="#">Instagram</a></li>
-                  <li><a href="#">Twitter</a></li>
-                </ul>
-              </li>
-              <li class="linkbox linkbox-posts">
-                <h3 class="linkbox-heading">Posts</h3>
-                <ul class="linkbox-list">
-                  <li><a href="#">Post #1</a></li>
-                  <li><a href="#">Post #2</a></li>
-                  <li><a href="#">Post #3</a></li>
-                </ul>
-              </li>
-              <li class="linkbox linkbox-links">
-                <h3 class="linkbox-heading">Useful Links</h3>
-                <ul class="linkbox-list">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Certificates</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </li>
-              <li class="linkbox linkbox-final cf">
-                <a href="/" class="logo">
-                  <span class="h1">TEW</span>
-                  <span class="txt">
-                    <span class="title-large">Total</span>&nbsp;
-                    <span class="title-small"
-                      >Engineering &amp; Welding</span
-                    ></span
-                  >
-                </a>
-                <ul class="linkbox-list">
-                  <li><a href="/sitemap.xml">Sitemap</a></li>
-                  |
-                  <li><a href="#">Terms</a></li>
-                  |
-                  <li><a href="#">Privacy</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <div class="credits-and-copyright">
-            <p class="copyright">
-              &copy; <span id="year">2020</span> Total Engineering and Welding
-              Ltd.
-            </p>
-            <p class="credits">
-              Designed &amp; Developed by
-              <a href="mailto:me@jenewland.me.uk">Jordan Newland</a>
-            </p>
-          </div>
+            </li>
+            <li class="tew-usp">
+              <h3 class="tew-usp__heading">Decades of Experience</h3>
+              <p class="tew-usp__summary">
+                Our team have over 30-years experience in the fabrication and
+                welding industry. We've worked across a wide variety of sectors
+                for both large and small organisations.
+              </p>
+              <img
+                src="/static/images/illustrations/usp-experience.svg"
+                alt=""
+              />
+            </li>
+            <li class="tew-usp">
+              <h3 class="tew-usp__heading">
+                Premium Services at an Affordable
+              </h3>
+              <p class="tew-usp__summary">
+                TEW is proud to offer a premium service to its clients at
+                affordable rates. So there's no need to stress about breaking
+                the bank this quarter.
+              </p>
+              <img
+                src="/static/images/illustrations/usp-affordable.svg"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
