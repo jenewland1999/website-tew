@@ -1,3 +1,3 @@
-# Website
+# Total Engineering & Welding's Website
 
-Experienced Professional Welding - On the web.
+Experienced Professional Welding.
