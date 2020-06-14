@@ -1,0 +1,23 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Web Developer: Jordan Newland
+    Contact: contact@snowshock35.com
+    Twitter: @SnowShock35
+    From: South West, England
+
+    Web Designer: Jordan Newland
+    Contact: contact@snowshock35.com
+    Twitter: @SnowShock35
+    From: South West, England
+
+# THANKS
+
+  <name>
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, Normalize.css
+  

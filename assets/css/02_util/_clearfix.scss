@@ -1,0 +1,13 @@
+.clearfix::before,
+.clearfix::after,
+.cf::before,
+.cf::after {
+  content: ' ';
+  display: table;
+  zoom: 1;
+}
+
+.clearfix::after,
+.cf::after {
+  clear: both;
+}

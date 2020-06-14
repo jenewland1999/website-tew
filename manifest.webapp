@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "name": "Total Engineering & Welding",
+  "launch_path": "/index.html",
+  "description": "Experienced Welding Professional",
+  "icons": {
+    
+  },
+  "developer": {
+    "name": "Jordan Newland",
+    "url": "https://snowshock35.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Total Engineering & Welding",
+      "description": "Experienced Welding Professional"
+    }
+  }
+}

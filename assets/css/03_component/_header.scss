@@ -1,0 +1,30 @@
+.site-header {
+  .container {
+    text-align: center;
+    line-height: 1;
+  }
+  padding: 12px 0;
+  background-color: $primaryDarkColor;
+  color: $primaryTextColor;
+  .material-icons {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+  p {
+    opacity: 0.8;
+    display: inline-block;
+    margin: 0 0.5em;
+    font-size: 1rem;
+    line-height: 1.15;
+    text-align: center;
+    a {
+      position: relative;
+      top: -4px;
+      display: inherit;
+      color: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      text-align: inherit;
+    }
+  }
+}

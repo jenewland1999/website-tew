@@ -1,0 +1,34 @@
+#testimonials {
+  background-color: $primaryTextColor;
+  color: $secondaryTextColor;
+  padding: 2em 0;
+  h3 {
+    text-align: center;
+    font-size: 31.92px
+  }
+  .testimonials-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .testimonial-item {
+    text-align: center;
+  }
+  .testimonial-avatar {
+    display: inline-block;
+    opacity: 0.5;
+    height: 84px;
+    width: 150px;
+    margin: 1em 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @for $i from 1 through 3 {
+      &#ta_0#{$i} {
+        background-image: url('../media/tew_testimonials_#{$i}@1x.png');
+      }
+    }
+  }
+}

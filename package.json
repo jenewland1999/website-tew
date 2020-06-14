@@ -1,0 +1,10 @@
+{
+  "name": "totalengineeringandwelding.uk",
+  "version": "0.1.0",
+  "description": "Experienced Professional Welding",
+  "main": "webpack.config.js",
+  "repository": "git@github.com:TotalEngineeringAndWelding/Website.git",
+  "author": "Jordan Newland",
+  "license": "MIT",
+  "private": true
+}

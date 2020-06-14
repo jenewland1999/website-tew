@@ -1,0 +1,47 @@
+/**
+ * 01_vendor 
+ */
+
+@import '01_vendor/_animista.scss';
+@import '01_vendor/_fonts.scss';
+@import '01_vendor/_normalize.scss';
+@import '01_vendor/_reboot.scss';
+
+/**
+ * 02_util
+ */
+
+@import '02_util/_button.scss';
+@import '02_util/_clearfix.scss';
+@import '02_util/_layout.scss';
+@import '02_util/_link.scss';
+@import '02_util/_text-hide.scss';
+@import '02_util/_typography.scss';
+@import '02_util/_variables.scss';
+
+/**
+ * 03_component
+ */ 
+
+@import '03_component/_about.scss';
+@import '03_component/_card.scss';
+@import '03_component/_contact.scss';
+@import '03_component/_cta-splash.scss';
+@import '03_component/_footer.scss';
+@import '03_component/_header.scss';
+@import '03_component/_hero.scss';
+@import '03_component/_misc.scss';
+@import '03_component/_navigation.scss';
+@import '03_component/_services.scss';
+@import '03_component/_testimonials.scss';
+@import '03_component/_work-showcase.scss';
+
+/**
+* 04_page
+*/
+
+@import '04_page/_home.scss';
+
+body {
+  font-family: $primaryFontFamily;
+}

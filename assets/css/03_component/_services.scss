@@ -1,0 +1,44 @@
+#services {
+  padding: 20px 0;
+  h3 {
+    margin-bottom: 29px;
+    color: $primaryTextColor;
+    text-align: center;
+  }
+  .services {
+    .service-item {
+      margin-bottom: 16px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-areas: "icon heading" "icon text";
+      
+      .material-icons {
+        grid-area: icon;
+        justify-self: center;
+        align-self: center;
+        // background: yellow;
+        color: $primaryColor;
+        font-size: 42px;
+      }
+      .service-heading {
+        grid-area: heading;
+        // background: crimson;
+        color: $primaryTextColor;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .service-text {
+        grid-area: text;
+        // background: orange;
+        opacity: 0.8;
+        color: $primaryTextColor;
+        font-size: 1rem;
+        font-weight: 300;
+
+      }
+    }
+  }
+}

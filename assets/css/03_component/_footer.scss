@@ -1,0 +1,105 @@
+.site-footer {
+  background-color: $secondaryDarkColor;
+  .site-footer-nav {
+    background-color: $secondaryDarkColor;
+    margin: 0 -1em;
+    padding: 2em 1em 0;
+    .linkboxes-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      .linkbox {
+        &.linkbox-final {
+          .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .h1 {
+            @include text-hide();
+            display: block;
+            width: 48px;
+            height: 55.15px;
+            background-image: url('../media/tew_logo@1x.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .txt {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1em;
+            font-weight: 600;
+            color: $primaryTextColor;
+            .title-large {
+              display: block;
+              margin-right: 0.25rem;
+              font-size: 2.75rem;
+              letter-spacing: 0.050em;
+              text-transform: uppercase;
+            }
+            .title-small {
+              display: block;
+              margin-left: 0.25rem;
+              font-size: 1.25rem;
+              font-weight: 300;
+              line-height: 1;
+              white-space: pre;
+              text-align: left;
+            }
+          }
+          margin-bottom: 0;
+          padding: 1em;
+          background-color: $secondaryColor;
+          text-align: center;
+          .linkbox-list {
+            display: inline-block;
+            margin-bottom: 0;
+            li {
+              display: inherit;
+              a {
+                display: inherit;
+                padding: 0;
+              }
+            }
+          }
+        }
+        margin: 0 -1em 2em;
+        padding: 0 1em;
+        .linkbox-heading {
+          font-size: 1rem;
+          font-weight: 600;
+          color: $primaryTextColor;
+        }
+        .linkbox-list {
+          margin: 0 0 1em;
+          padding: 0;
+          list-style-type: none;
+          color: #ccc;
+          a {
+            padding: 0.35em 0;
+            display: block;
+            color: inherit;
+          }
+        }
+      }
+    } 
+  }
+  .credits-and-copyright {
+    background-color: $secondaryLightColor;
+    margin: 0 -1em;
+    padding: 1em;
+    color: $secondaryTextColor;
+    text-align: center;
+    p {
+      font-weight: 100;
+      padding: 0;
+      margin: 0;
+      a {
+        color: inherit;
+        font-weight: 300;
+      }
+    }
+  }
+}

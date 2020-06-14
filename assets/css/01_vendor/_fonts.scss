@@ -1,0 +1,31 @@
+// Neris by Eimantas Paškonis
+// http://cargocollective.com/eimantas
+// License available in assets/fonts/License.txt
+
+@font-face {
+  font-family: 'Neris';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Neris Thin'), local('Neris-Thin'), url('../fonts/Neris-Thin-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neris';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Neris Light'), local('Neris-Light'), url('../fonts/Neris-Light-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neris';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Neris Light Italic'), local('Neris-LightItalic'), url('../fonts/Neris-LightItalic-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neris';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Neris SemiBold'), local('Neris-SemiBold'), url('../fonts/Neris-SemiBold-webfont.woff') format('woff');
+}

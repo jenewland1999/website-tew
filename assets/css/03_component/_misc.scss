@@ -1,0 +1,16 @@
+body {
+  // line-height: 1.15;
+}
+
+.site-content {
+  padding: 1em 0 0;
+  background-color: $secondaryTextColor;
+}
+
+.dummy-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    cursor: default;
+  }
+}
